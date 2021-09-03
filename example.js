@@ -153,7 +153,7 @@ client.on('message', async msg => {
             client.sendMessage(msg.from, attachmentData, { caption: 'Here\'s your requested media.' });
         }
     } else if (msg.body === '!location') {
-        msg.reply(new Location(37.422, -122.084, 'Googleplex\nGoogle Headquarters'));
+        msg.reply(new Location(27.2046, 77.4977, '129 Dennis St, Sault Ste. Marie, ON P6A 2X2'));
     } else if (msg.location) {
         msg.reply(msg.location);
     } else if (msg.body.startsWith('!status ')) {
